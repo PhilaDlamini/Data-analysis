@@ -15,8 +15,8 @@ def loadData(source, path, headers):
     print('All read data');
     print(dataframe.head(5));
     print('Information about this data');
-    print(dataframe.dtypes);
-    print(dataframe.describe(include = 'all'));
+    print(dataframe.dtypes); #Types per column
+    print(dataframe.describe(include = 'all')); #Return a stistical summary of each column
     print(dataframe.info());
     
     #Save the data to a file here
@@ -32,3 +32,4 @@ loadData(FROM_CSV, 'http://archive.ics.uci.edu/ml/machine-learning-databases/aut
                 'number of cylinders', 'engine size', 'fuel systems', 'bore', 'stroke', 'compression ratio', 'horsepower', 'peak', 'city', 'highway', 'price']);
     
     
+#Remember: unique ==> count of unique items, top ==> most frequent object, freq ==> frequency of first object
